@@ -1,0 +1,25 @@
+{"kind": "entity", "ticker": "META", "legal_name": "Meta Platforms, Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "manual", "in_daily_review": true}
+{"kind": "entity", "ticker": "AMZN", "legal_name": "Amazon.com, Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "manual", "in_daily_review": true}
+{"kind": "entity", "ticker": "BHVN", "legal_name": "Biohaven Ltd.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "SPCX", "legal_name": "Space Exploration Technologies Corp.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "CRWV", "legal_name": "CoreWeave, Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "INTC", "legal_name": "Intel Corporation", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "BAC", "legal_name": "Bank of America Corporation", "entity_type": "public_company", "roles": ["anchor", "financial_institution", "capital_provider"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "C", "legal_name": "Citigroup Inc.", "entity_type": "public_company", "roles": ["anchor", "financial_institution", "capital_provider"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "PLTR", "legal_name": "Palantir Technologies Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "APLD", "legal_name": "Applied Digital Corporation", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "TSLA", "legal_name": "Tesla, Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "DELL", "legal_name": "Dell Technologies Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "ORCL", "legal_name": "Oracle Corporation", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "MRVL", "legal_name": "Marvell Technology, Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "XOM", "legal_name": "Exxon Mobil Corporation", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "PCG", "legal_name": "PG&E Corporation", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "SMMT", "legal_name": "Summit Therapeutics Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "NOK", "legal_name": "Nokia Oyj", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "TNON", "legal_name": "Tenon Medical, Inc.", "entity_type": "public_company", "roles": ["anchor"], "universe_source": "daily_game_plan", "in_daily_review": true}
+{"kind": "entity", "ticker": "SPY", "entity_type": "etf_fund", "roles": ["hedge_instrument"], "universe_source": "daily_game_plan", "in_daily_review": false}
+{"kind": "entity", "ticker": "SOXL", "entity_type": "etf_fund", "roles": ["hedge_instrument"], "universe_source": "daily_game_plan", "in_daily_review": false}
+{"kind": "entity", "ticker": "XLE", "entity_type": "etf_fund", "roles": ["hedge_instrument"], "universe_source": "daily_game_plan", "in_daily_review": false}
+{"kind": "entity", "ticker": "IBIT", "entity_type": "etf_fund", "roles": ["hedge_instrument"], "universe_source": "daily_game_plan", "in_daily_review": false}
+{"kind": "entity", "ticker": "UVXY", "entity_type": "etf_fund", "roles": ["hedge_instrument"], "universe_source": "daily_game_plan", "in_daily_review": false}
+{"kind": "entity", "ticker": "IGV", "entity_type": "etf_fund", "roles": ["hedge_instrument"], "universe_source": "daily_game_plan", "in_daily_review": false}

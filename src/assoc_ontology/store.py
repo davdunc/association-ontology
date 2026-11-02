@@ -311,10 +311,13 @@ class Store:
         for x in ev_ids:
             if x not in evidence:
                 raise ValidationError(f"{eid}: unknown evidence {x}")
-        tiers = sorted(
-            {evidence[x]["tier"] for x in ev_ids}
-            | ({prior["best_tier"]} if prior and prior.get("best_tier") else set())
-        )
+        # best_tier is recomputed from the latest tier of every evidence row on the
+        # edge, so a re-tag (e.g. A -> B) propagates; fall back to prior best_tier
+        # only for evidence ids no longer resolvable.
+        all_ev = set(ev_ids) | set((prior or {}).get("evidence_ids") or [])
+        tiers = sorted({evidence[x]["tier"] for x in all_ev if x in evidence})
+        if prior and prior.get("best_tier") and any(x not in evidence for x in all_ev):
+            tiers = sorted(set(tiers) | {prior["best_tier"]})
         mat = r.get("materiality", prior["materiality"] if prior else "unknown")
         if mat not in vocab.MATERIALITY:
             raise ValidationError(f"{eid}: bad materiality {mat!r}")

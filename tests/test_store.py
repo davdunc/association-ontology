@@ -167,3 +167,19 @@ def test_postgres_export(store):
 
     counts = export(store, os.environ["ASSOC_PG_DSN"], schema="assoc_test")
     assert counts["edges_current"] == 3 and counts["entities"] == 4
+
+
+def test_evidence_retag_downgrades_best_tier(store):
+    eid = edge_id_for("tkr:SUP", "SUPPLIES_COMPONENT_TO", "tkr:META", None)
+    assert store.current_edges()[eid]["best_tier"] == "A"
+    store.ingest(
+        [
+            evid("https://sec/a", "B"),
+            edge("SUP", "SUPPLIES_COMPONENT_TO", "META", "https://sec/a", event_type="reconfirmed", evidence_ids=[]),
+        ],
+        trigger="on_demand",
+        ts=dt.datetime(2026, 2, 1, tzinfo=UTC),
+    )
+    cur = store.current_edges()[eid]
+    assert cur["best_tier"] == "B"
+    assert cur["status"] == "proposed"
